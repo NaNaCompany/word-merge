@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "node --test tests/core.test.cjs"
+    "test": "node --test tests/core.test.cjs tests/i18n.test.cjs"
   },
   "devDependencies": {
     "@xmldom/xmldom": "0.9.12"

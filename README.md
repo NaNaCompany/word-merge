@@ -17,3 +17,9 @@ This is a new standalone app, not a modification or redirect of a legacy applica
 ## Validation
 
 Install development dependencies with `npm install --ignore-scripts`, then run `npm test`. Synthetic test fixtures contain no personal material. Verify file ordering, output structure, error paths, and real browser downloads before deployment. Production has no Node.js dependency.
+
+## Languages
+
+Korean remains at the root. English, Japanese, Chinese, Spanish, German, French, Portuguese and Russian have static pages under `/en/`, `/ja/`, `/zh/`, `/es/`, `/de/`, `/fr/`, `/pt/`, `/ru/`. The footer links all nine versions. Each page has a self canonical and reciprocal hreflang links; the app sitemap lists all nine URLs. No language redirect discards the current file selection.
+
+Edit `content/index.ko.html` for the Korean shell and `content/locales.json` for translations. Run `python scripts/build_locales.py` then `python scripts/check_locales.py`; use `--check` on the build script in CI. Shared processing and publisher scripts remain local to this independent app.

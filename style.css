@@ -3,3 +3,9 @@
 @media(max-width:850px){.workspace,.qr-workspace{grid-template-columns:1fr}.aside{display:none}.qr-output{position:static}.content{grid-template-columns:1fr}.qr-output canvas{max-width:280px}.qr-empty{min-height:170px}}
 @media(max-width:500px){main{padding:8px 16px 35px}.topbar{padding:20px 16px}.topbar nav{gap:10px;font-size:11px}.topbar nav a:first-child{display:none}.hero{padding:16px 0 26px}h1{letter-spacing:-1.3px}.lead{font-size:15px}.panel{padding:20px 16px;border-radius:14px}.drop{padding:24px 12px}.file-row{padding:10px;gap:7px;flex-wrap:wrap}.file-buttons{margin-left:auto}.file-copy{min-width:140px}.file-order{padding:5px 7px}.footer{padding:22px 16px 50px}.qr-output canvas{max-width:100%}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}@media print{#nana-more-apps,.topbar,.actions,.footer{display:none}}
+
+/* Localized copy and footer language navigation. */
+.topbar{gap:16px;flex-wrap:wrap}.topbar nav{flex-wrap:wrap}.hero h1{overflow-wrap:anywhere}
+.language-switcher{flex-basis:100%;display:flex;flex-wrap:wrap;gap:8px 14px;padding-top:18px;border-top:1px solid var(--line)}
+.language-switcher a{margin:0;line-height:1.9}.language-switcher a[aria-current=page]{font-weight:700;text-decoration:underline}
+.badge,.button{white-space:normal;overflow-wrap:anywhere}.status{white-space:pre-line}

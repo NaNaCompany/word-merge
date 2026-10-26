@@ -14,5 +14,10 @@ jobs:
         with:
           node-version: 22
       - run: npm install --ignore-scripts --no-audit --no-fund
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/build_locales.py --check
+      - run: python scripts/check_locales.py
       - run: npm test
       - run: node --check core.js && node --check app.js
