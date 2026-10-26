@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="여러 DOCX 문서를 하나의 Word 파일로 합치세요. 문단·표·사진을 담은 문서를 원하는 순서로 이어 붙입니다."><meta name="theme-color" content="#102539"><title>Word 합치기 — DOCX 문서 여러 개 합치기 | NaNa Lab</title><link rel="canonical" href="https://nanalab.kr/word-merge/"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:title" content="Word 합치기 — DOCX 문서 여러 개 합치기 | NaNa Lab"><meta property="og:description" content="여러 DOCX 문서를 하나의 Word 파일로 합치세요. 문단·표·사진을 담은 문서를 원하는 순서로 이어 붙입니다."><meta property="og:url" content="https://nanalab.kr/word-merge/"><link rel="stylesheet" href="style.css?v=20261026a"><script defer src="vendor/jszip.min.js"></script><script defer src="core.js?v=20261026a"></script><script defer src="app.js?v=20261026a"></script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Word 합치기", "url": "https://nanalab.kr/word-merge/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "inLanguage": "ko", "description": "여러 DOCX 문서를 하나의 Word 파일로 합치세요. 문단·표·사진을 담은 문서를 원하는 순서로 이어 붙입니다.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"}}</script>
+<!-- NaNa publisher: GTM -->
+<script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })
+            (window, document, 'script', 'dataLayer', 'GTM-NV2WWQXB');
+    </script>
+<!-- /NaNa publisher: GTM -->
+<!-- NaNa publisher: Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZYSF0173P"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2ZYSF0173P');
+    </script>
+<!-- /NaNa publisher: Analytics -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9767176956440077"
+     crossorigin="anonymous"></script>
+</head><body data-tool="word"><!-- NaNa publisher: GTM fallback -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV2WWQXB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+<!-- /NaNa publisher: GTM fallback --><a class="skip" href="#main">본문으로 건너뛰기</a><header class="topbar"><a class="brand" href="https://nanalab.kr/"><span class="brand-mark" aria-hidden="true">N</span>NaNa Lab</a><nav aria-label="페이지 메뉴"><a href="#how-it-works">사용 방법</a><a href="#faq">자주 묻는 질문</a><a href="https://nanalab.kr/apps/">전체 앱 ↗</a></nav></header><main id="main"><section class="hero"><p class="eyebrow">DOCUMENT TOOLS / 02</p><h1>Word 합치기</h1><p class="lead">여러 DOCX 문서를 하나의 Word 파일로 합치세요. 문단·표·사진을 담은 문서를 원하는 순서로 이어 붙입니다.</p><div class="badges"><span class="badge">무료</span><span class="badge">회원가입 없음</span><span class="badge">브라우저에서 처리</span></div></section><noscript><section class="panel"><h2>JavaScript를 켜 주세요</h2><p>파일을 업로드하지 않고 브라우저에서 처리하기 위해 JavaScript가 필요합니다.</p></section></noscript><div class="workspace"><section class="panel" id="tool-panel" aria-labelledby="file-heading" aria-busy="false"><h2 id="file-heading"><span class="step">1</span>파일 선택</h2><div class="drop" id="drop-zone"><span class="upload-icon" aria-hidden="true">↥</span><strong>DOCX 파일을 여기에 놓으세요</strong><p class="hint">DOCX 2~10개 · 파일당 25MB · 합계 100MB</p><input type="file" id="file-input" multiple accept=".docx" hidden><button type="button" class="button primary" id="browse-button">파일 선택</button></div><p id="selection-count" class="hint">선택한 파일이 없습니다</p><ol class="file-list" id="file-list" aria-label="결합할 파일과 순서"></ol><div class="field" style="margin-top:24px"><label for="output-name">저장할 파일 이름</label><input id="output-name" type="text" value="합친문서" maxlength="100" autocomplete="off"></div><div class="actions"><button type="button" id="merge-button" class="button primary" disabled>Word 합치기</button><button type="button" id="clear-button" class="button subtle" disabled>모두 지우기</button></div><p id="status" class="status" role="status" aria-live="polite"></p><section id="result" class="result" aria-label="합치기 결과" hidden><h3>파일 준비 완료</h3><p id="result-details"></p><a id="download" class="button primary" download>결과 다운로드 ↓</a></section></section><aside class="panel aside"><h2>이렇게 사용하세요</h2><ol><li>합칠 문서를 두 개 이상 선택합니다.</li><li>위아래 버튼으로 파일 순서를 정합니다.</li><li>합치기를 누르고 완료된 파일을 저장합니다.</li></ol><p class="note">일반 DOCX만 지원합니다. .doc, HWP, 암호·전자서명·변경 추적·메모·삽입 객체가 있는 파일은 Word에서 먼저 정리하세요.</p><p class="note">선택한 파일은 브라우저 안에서 처리합니다. 파일 본문과 이름을 서버로 전송하지 않습니다.</p></aside></div><div class="content" id="how-it-works"><section class="panel"><h2>필요한 작업을, 간단하게</h2><ul><li>문단·표·삽입 이미지 결합</li><li>문서별 구역·용지 크기 유지</li><li>목록 번호·스타일 ID 충돌 처리</li></ul><p>일반 DOCX만 지원합니다. .doc, HWP, 암호·전자서명·변경 추적·메모·삽입 객체가 있는 파일은 Word에서 먼저 정리하세요.</p></section><section class="panel"><h2>원본은 그대로 둡니다</h2><p>입력 파일을 덮어쓰지 않습니다. 결과를 새 파일로 저장하고, 실제 제출·인쇄 전에 내용과 순서를 확인해 주세요. 문서 안의 글꼴은 파일을 여는 환경에 따라 다르게 보일 수 있습니다.</p><p>기능 제한과 지원 범위는 아래 안내에서 확인할 수 있습니다.</p></section></div><section class="panel faq" id="faq"><h2>자주 묻는 질문</h2><details><summary>옛날 Word .doc 파일도 되나요?</summary><p>DOCX 파일만 지원합니다. .doc 파일은 Microsoft Word나 LibreOffice에서 열어 .docx로 저장한 다음 선택해 주세요. 파일 확장자만 바꾸는 것은 변환이 아닙니다.</p></details><details><summary>문서 모양도 그대로 유지되나요?</summary><p>문단·표·이미지와 문서별 구역 설정을 복사합니다. 문서 경계는 다음 페이지에서 시작합니다. 전체 테마·기본 글꼴 환경과 일부 필드 계산은 첫 문서 또는 문서를 여는 Word 환경의 영향을 받으므로, 출력 전에 결과를 확인하세요.</p></details><details><summary>메모나 변경 추적이 있으면 어떻게 하나요?</summary><p>본문의 변경 내용 추적·메모·삽입 객체를 감지하면 합치기를 중단합니다. Word에서 변경 내용을 검토·확정하고 메모를 정리한 사본을 사용하세요. 이미지·링크가 있는 각주나 미주도 현재 지원하지 않습니다.</p></details><details><summary>문서는 서버에 저장되나요?</summary><p>선택한 문서의 본문과 파일은 서버에 업로드하지 않습니다. 페이지에서 사용 중인 브라우저의 메모리 안에서 처리하고, 결과를 직접 다운로드합니다. 페이지를 닫으면 선택 목록은 사라집니다.</p></details></section><section class="panel privacy" id="privacy"><h2>개인정보·이용 안내</h2><p>선택한 파일은 현재 브라우저에서 처리합니다. 이 앱은 파일이나 입력 내용을 저장하는 서버를 사용하지 않습니다. 접속 통계 및 광고를 위해 Google Analytics·Tag Manager·AdSense와 Cloudflare 분석 도구를 사용하며, 이들 서비스에는 일반적인 접속 정보가 전달될 수 있습니다. 파일 내용·이름·QR 입력값을 분석 이벤트로 보내지 않습니다.</p><p>도구는 무료로 제공됩니다. 중요한 문서는 원본을 보관하고 결과를 확인한 뒤 사용하세요. 문의: <a href="https://nanalab.kr/#contact">NaNa Lab 문의</a>.</p></section></main><footer class="footer"><span>© 2026 NaNa Lab · 작은 도구, 가벼운 작업.</span><span><a href="#privacy">개인정보·이용 안내</a><a href="THIRD_PARTY_NOTICES.md">오픈소스 안내</a></span></footer><div id="nana-more-apps"><a href="https://nanalab.kr/apps/">More Apps</a></div><!-- NaNa publisher: Cloudflare fallback -->
+<script>
+(function () {
+  function ensureBeacon() {
+    // Cloudflare may inject its beacon at the edge. Reuse that script when present.
+    if (document.querySelector('script[src*="static.cloudflareinsights.com/beacon.min.js"]')) return;
+    var beacon = document.createElement('script');
+    beacon.defer = true;
+    beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    beacon.setAttribute('data-cf-beacon', JSON.stringify({token: '9f3423bb0d034d91bbe1a12afeff2429'}));
+    document.head.appendChild(beacon);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', ensureBeacon, {once: true});
+  else ensureBeacon();
+})();
+</script>
+<!-- /NaNa publisher: Cloudflare fallback --></body></html>

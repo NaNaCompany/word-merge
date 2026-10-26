@@ -1,0 +1,124 @@
+{
+  "library": "jszip",
+  "version": "3.10.2",
+  "selected_license": "MIT (dual-license option selected)",
+  "file": "jszip.min.js",
+  "sha256": "7f839b2d4688b845c105ebf5d2f9803075f91ea0fe72bdaac176c3a04dd3d2c1",
+  "packages": [
+    {
+      "name": "jszip",
+      "version": "3.10.2",
+      "license": "(MIT OR GPL-3.0-or-later)",
+      "source": "https://github.com/Stuk/jszip.git",
+      "license_files": [
+        "LICENSE.markdown"
+      ]
+    },
+    {
+      "name": "lie",
+      "version": "3.3.0",
+      "license": "MIT",
+      "source": "https://github.com/calvinmetcalf/lie.git",
+      "license_files": [
+        "license.md"
+      ]
+    },
+    {
+      "name": "immediate",
+      "version": "3.0.6",
+      "license": "MIT",
+      "source": "git://github.com/calvinmetcalf/immediate.git",
+      "license_files": [
+        "LICENSE.txt"
+      ]
+    },
+    {
+      "name": "pako",
+      "version": "1.0.11",
+      "license": "(MIT AND Zlib)",
+      "source": "nodeca/pako",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "readable-stream",
+      "version": "2.3.8",
+      "license": "MIT",
+      "source": "git://github.com/nodejs/readable-stream",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "core-util-is",
+      "version": "1.0.3",
+      "license": "MIT",
+      "source": "git://github.com/isaacs/core-util-is",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "inherits",
+      "version": "2.0.4",
+      "license": "ISC",
+      "source": "git://github.com/isaacs/inherits",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "isarray",
+      "version": "1.0.0",
+      "license": "MIT",
+      "source": "git://github.com/juliangruber/isarray.git",
+      "license_files": []
+    },
+    {
+      "name": "process-nextick-args",
+      "version": "2.0.1",
+      "license": "MIT",
+      "source": "https://github.com/calvinmetcalf/process-nextick-args.git",
+      "license_files": [
+        "license.md"
+      ]
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.1.2",
+      "license": "MIT",
+      "source": "git://github.com/feross/safe-buffer.git",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "string_decoder",
+      "version": "1.1.1",
+      "license": "MIT",
+      "source": "git://github.com/nodejs/string_decoder.git",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT",
+      "source": "git://github.com/TooTallNate/util-deprecate.git",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "setimmediate",
+      "version": "1.0.5",
+      "license": "MIT",
+      "source": "YuzuJS/setImmediate",
+      "license_files": [
+        "LICENSE.txt"
+      ]
+    }
+  ]
+}
